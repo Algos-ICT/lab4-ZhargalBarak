@@ -43,5 +43,7 @@ with open('input.txt') as f:
                         f1.write('NO\n')
                         flag = False
                         break
-            if flag == True:
+            if flag == True and brackets.is_empty() == True:
                 f1.write('YES\n')
+            else:
+                f1.write('NO\n')
